@@ -43,6 +43,10 @@ ul {
   list-style-type: none !important;
 }
 
+p {
+  margin: 0;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,6 +95,10 @@ ul {
 .header__content {
   font-size: 3.2rem;
   font-weight: 600;
+}
+
+#small-header {
+  font-size: 2rem;
 }
 
 .footer {
@@ -198,7 +206,7 @@ input {
 }
 
 .tab-label-text {
-  padding-left: 40px;
+  padding-left: 3rem;
   width: 100%;
 }
 
@@ -309,8 +317,51 @@ input:checked ~ .tab-content {
   html {
     font-size: 10px;
   }
+  .header {
+    text-align: center;
+  }
+  .header:before {
+    background-image: none;
+  }
+  .header:after {
+    background-image: none;
+  }
+  .header__container {
+    margin: 0.8rem;
+    margin-bottom: 1.5rem;
+    padding: 0 10px;
+  }
+  .header__content {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1;
+  }
   .image {
     display: none;
+  }
+  .tab-label {
+    padding: 1rem;
+    min-height: 6rem;
+  }
+  .tab-label-text {
+    padding-left: 5rem;
+  }
+  .tab-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tab-workload {
+    display: none;
+  }
+  input:checked ~ .tab-content {
+    max-height: 300vh;
+    padding: 1em;
   }
 }
 
