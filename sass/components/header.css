@@ -1,0 +1,50 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, right top, from(#168acb), to(#006aa9));
+  background-image: linear-gradient(to right, #168acb, #006aa9);
+  z-index: 1;
+  color: #ffffff;
+  border-radius: 0px !important;
+}
+
+.header:before {
+  content: '';
+  background-image: url(https://kb.epam.com/download/thumbnails/1044355733/bottom-left-blue-cloud.png?api=v2&nonce=1591864736853);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 18rem;
+  height: 7rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 100%;
+}
+
+.header:after {
+  content: '';
+  background-image: url(https://kb.epam.com/download/thumbnails/1044355733/top-left-clouds.png?api=v2&nonce=1591864784783);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 13rem;
+  min-height: 13rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 100%;
+}
+
+.header__container {
+  margin: 2rem;
+}
+
+.header__content {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+/*# sourceMappingURL=header.css.map */
