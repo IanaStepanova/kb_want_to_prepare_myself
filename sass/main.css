@@ -47,6 +47,10 @@ p {
   margin: 0;
 }
 
+#title-text {
+  display: none;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
