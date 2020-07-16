@@ -48,6 +48,10 @@
   font-weight: 600;
 }
 
+.header__email-link {
+  font-size: 18px !important;
+}
+
 #small-header {
   font-size: 2rem;
 }
